@@ -5,8 +5,8 @@ import Logo from "../public/logo.png";
 export default function Home() {
   return (
     <div>
-      <div className="m-10 flex">
-        <form className="flex flex-col rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
+      <div className="m-10 flex gap-5">
+        <form className="flex flex-col p-5 rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
           <Image src={Logo} width={175} alt="Logo" />
           <div>
             <div className="mb-2 block">
@@ -31,7 +31,7 @@ export default function Home() {
           </div>
           <Button type="submit">Submit</Button>
         </form>
-        <Card href="#" className="ml-auto">
+        <Card href="#" className="">
           <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             Bienvenue sur Nom !
           </h5>
