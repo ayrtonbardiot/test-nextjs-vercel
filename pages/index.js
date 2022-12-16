@@ -5,25 +5,30 @@ import Logo from "../public/logo.png";
 export default function Home() {
   return (
     <div>
-      <div className="m-10 flex">
-        <form className="flex flex-col rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
+      <div className="m-10 flex gap-5">
+        <form className="flex flex-col p-5 rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 w-1/6">
           <Image src={Logo} width={175} alt="Logo" />
           <div>
             <div className="mb-2 block">
-              <Label htmlFor="email1" value="Your email" />
+              <Label htmlFor="username" value="Ton pseudo" />
             </div>
             <TextInput
-              id="email1"
-              type="email"
-              placeholder="name@flowbite.com"
+              id="username"
+              type="text"
+              placeholder="Pseudonyme"
               required={true}
             />
           </div>
           <div>
             <div className="mb-2 block">
-              <Label htmlFor="password1" value="Your password" />
+              <Label htmlFor="password1" value="Ton mot de passe" />
             </div>
-            <TextInput id="password1" type="password" required={true} />
+            <TextInput
+              id="password1"
+              type="password"
+              placeholder="********"
+              required={true}
+            />
           </div>
           <div className="flex items-center gap-2">
             <Checkbox id="remember" />
@@ -31,7 +36,7 @@ export default function Home() {
           </div>
           <Button type="submit">Submit</Button>
         </form>
-        <Card href="#" className="ml-auto">
+        <Card href="#" className="">
           <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             Bienvenue sur Nom !
           </h5>
@@ -41,48 +46,165 @@ export default function Home() {
           </p>
         </Card>
       </div>
-      <div className="flex flex-row justify-center gap-5">
-        <div className="max-w-sm">
-          <Card
+      <div className="flex flex-row mx-10 gap-5">
+        {/*<Card
             imgAlt="Meaningful alt text for an image that is not purely decorative"
             imgSrc="https://pbs.twimg.com/media/FPnKklZX0AAzE5z.png"
           >
             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Noteworthy technology acquisitions 2021
+              Fais-toi de nouveaux amis !
             </h5>
             <p className="font-normal text-gray-700 dark:text-gray-400">
               Here are the biggest enterprise technology acquisitions of 2021 so
               far, in reverse chronological order.
             </p>
-          </Card>
+          </Card>*/}
+        <div class="bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+            <Image
+              className="rounded-t-lg"
+              src="https://pbs.twimg.com/media/FPnKklZX0AAzE5z.png"
+              alt=""
+              width={736}
+              height={546}
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Read more
+              <svg
+                aria-hidden="true"
+                class="w-4 h-4 ml-2 -mr-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+          </div>
         </div>
-        <div className="max-w-sm">
-          <Card
+        {/*<Card
             imgAlt="Meaningful alt text for an image that is not purely decorative"
             imgSrc="https://pbs.twimg.com/media/FPnKklZX0AAzE5z.png"
           >
             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Noteworthy technology acquisitions 2021
+              Fais-toi de nouveaux amis !
             </h5>
             <p className="font-normal text-gray-700 dark:text-gray-400">
               Here are the biggest enterprise technology acquisitions of 2021 so
               far, in reverse chronological order.
             </p>
-          </Card>
+          </Card>*/}
+        <div class="bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+            <Image
+              className="rounded-t-lg"
+              src="https://pbs.twimg.com/media/FPnKklZX0AAzE5z.png"
+              alt=""
+              width={736}
+              height={546}
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Read more
+              <svg
+                aria-hidden="true"
+                class="w-4 h-4 ml-2 -mr-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+          </div>
         </div>
-        <div className="max-w-sm">
-          <Card
+        {/*<Card
             imgAlt="Meaningful alt text for an image that is not purely decorative"
             imgSrc="https://pbs.twimg.com/media/FPnKklZX0AAzE5z.png"
           >
             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Noteworthy technology acquisitions 2021
+              Fais-toi de nouveaux amis !
             </h5>
             <p className="font-normal text-gray-700 dark:text-gray-400">
               Here are the biggest enterprise technology acquisitions of 2021 so
               far, in reverse chronological order.
             </p>
-          </Card>
+          </Card>*/}
+        <div class="bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+            <Image
+              className="rounded-t-lg"
+              src="https://pbs.twimg.com/media/FPnKklZX0AAzE5z.png"
+              alt=""
+              width={736}
+              height={546}
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Read more
+              <svg
+                aria-hidden="true"
+                class="w-4 h-4 ml-2 -mr-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
       <Image
